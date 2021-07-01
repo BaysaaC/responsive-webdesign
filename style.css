@@ -1,0 +1,67 @@
+* {
+    box-sizing:border-box;
+  }
+
+div {
+    color:white;
+    background-color:grey;
+    border: black 10px solid;
+    overflow:auto;
+}
+
+@media only screen and (max-width: 300px) {
+    body {
+        background-color:red;
+    }
+
+    div {
+      font-size:100%;
+      width:100%;
+    }
+    /* Code for exercice "2. Display / hide elements" de-activated so one could test exercice "4. Re-arrange" 
+    #medium, #large {
+        display: none;
+    }
+    */
+  }
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-color:green;
+    }
+
+    div {
+      font-size:150%;
+      display:inline-block;
+    }
+    /* Code for exercice "2. Display / hide elements" de-activated so one could test exercice "4. Re-arrange" 
+    #small, #large {
+        display: none;
+    }
+    */
+    #small {
+        width:66%;
+    }
+    #medium {
+        width:33%;
+    }
+    #large {
+        width:100%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    body {
+        background-color: blue;
+        display:flex;
+    }
+
+    div {
+      font-size:200%;
+    }
+    /* Code for exercice "2. Display / hide elements" de-activated so one could test exercice "4. Re-arrange" 
+    #small, #medium {
+        display: none;
+    }
+    */
+}
